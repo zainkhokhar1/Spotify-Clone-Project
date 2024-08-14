@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- here is the sidebar of the page -->
+        <div class="sidebar">
+            <!-- starts 1st side bar -->
+            <div class="home_icon">
+                <ul>
+                    <li>
+                        <i id="icon" class="fa-solid fa-house"></i>
+                        <h3 href="#" id="Home">Home</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="search_icon">
+                <ul>
+                    <li>
+                        <span class="material-symbols-outlined" id="s_icon">
+                            search
+                        </span>
+                        <h3 href="#" id="search">Search</h3>
+                    </li>
+                </ul>
+            </div>
+            <!-- 2nd sidebar box -->
+            <div class="container_card">
+                <div class="library_ico">
+                    <i class="material-symbols-outlined" id="icon_book">
+                        book_5
+                    </i>
+                    <h3 id="library">
+                        Your Library
+                    </h3>
+                    <i class="material-symbols-outlined" id="add">
+                        add
+                    </i>
+                    <i class="material-symbols-outlined" id="arrow">
+                        arrow_forward
+                    </i>
+                </div>
+                <!--  cards -->
+                <!-- card1 -->
+                <div class="container_cards">
+                    <div class="cards" id="card_1">
+                        <h4 class="headings" id="card_heading">
+                            Create your first playlist
+                        </h4>
+                        <p id="card_text">
+                            It's easy, we'll help you
+                        </p>
+                        <button class="create_playlist" id="btn_1">
+                            Create playlist
+                        </button>
+                    </div>
+                    <!--  card 2 -->
+                    <div class="cards" id="card_2">
+                        <h4 class="headings" id="card_heading_2">
+                            Let's find some prodcasts to follow
+                        </h4>
+                        <p id="card_text_2">
+                            We will keep you updated on new episodes
+                        </p>
+                        <button class="create_playlist" id="btn_2">
+                            Browse Prodcasts
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+
+            <!-- Navbar -->
+
+            <div class="navbar_container">
+                <div class="first_row">
+                    <button id="left_btn_2">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button id="right_btn_2">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                    <button id="btn_1_">
+                        Explore Premium
+                    </button>
+                    <button id="btn_2_">
+                        <i class="fa-regular fa-circle-down"></i>
+                        Install App
+                    </button>
+                    <a href="#"><i id="bell_btn" class="fa-regular fa-bell"></i></a>
+                    <a href="#"><i id="user_btn" class="fa-solid fa-user"></i></a>
+
+                </div>
+                <div class="second_row">
+                    <button id="all_btn">All</button>
+                    <button id="music_btn">
+                        Music
+                    </button>
+                </div>
+            </div>
+
+            <!-- cards -->
+
+            <div class="cards_main">
+
+                <h2 class="card_1_heading">
+                    To get you Started
+                </h2>
+
+                <div class="cards_container">
+                    <div class="card_1">
+
+                        <div id="first_card" class="card_1_">
+                            <img src="C:\Users\zain\Desktop\Spotify Clone CSS\photos\card_image1.jfif" alt="">
+                            <p class="card_title">
+                            Sanam Re
+                            </p>
+                            <p class="card_1_para">
+                           Arijit Singh , T-Series Mithoon
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- recently played cards here -->
+                <h2 class="card_1_heading">
+                    Recently Played
+                </h2>
+
+                <div class="cards_container">
+                    <div class="card_1">
+
+                        <div id="first_card" class="card_1_">
+                            <img src="C:\Users\zain\Desktop\Spotify Clone CSS\photos\card_image2.jfif" alt="">
+                            <p class="card_title">
+                                Phir bhi tmko Chahon
+                            </p>
+                            <p class="card_1_para">
+                                Arijit Singh , T-Series Mithoon
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- recently played cards ended here -->
+
+                <!-- card2 -->
+                <h2 class="card_1_heading">
+                    Try something Else
+                </h2>
+
+                <div class="cards_container">
+                    <div id="card2" class="card_1">
+
+                        <div class="card_1_">
+                            <img src="C:\Users\zain\Desktop\Spotify Clone CSS\photos\cards_image3.jfif" alt="">
+                            <p class="card_title">
+                                Sun raha hy na to
+                            </p>
+                            <p class="card_1_para">
+                                Ankit Tiwari T-Series , Bhusan Kumar
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+
+                <div class="cards_container">
+                    <div class="card_1">
+
+                        <div class="cardheading">
+
+                        </div>
+
+                        <div class="card_1_">
+                            <img src="C:\Users\zain\Desktop\Spotify Clone CSS\photos\card_image4.jfif" alt="">
+                            <p class="card_title">
+                                Teri meri prem kahani
+                            </p>
+                            <p class="card_1_para">
+                                Rahat Fateh Ali Khan,T-series Shabbir Ahmed
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 4 -->
+
+                <div class="cards_container">
+                    <div class="card_1">
+
+                        <div class="cardheading">
+
+                        </div>
+
+                        <div class="card_1_">
+                            <img src="C:\Users\zain\Desktop\Spotify Clone CSS\photos\card_image2.jfif" alt="">
+                            <p class="card_title">
+                                Ve Kamlaya
+                            </p>
+                            <p class="card_1_para">
+                                Arijit Singh, T-series , Summit Roy
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 5 -->
+
+                <div class="cards_container">
+                    <div class="card_1">
+
+                        <div class="cardheading">
+
+                        </div>
+
+                        <div class="card_1_">
+                            <img src="C:\Users\zain\Desktop\Spotify Clone CSS\photos\card_image6.jfif" alt="">
+                            <p class="card_title">
+                                Banjara
+                            </p>
+                            <p class="card_1_para">
+                                Arijit Singh, T-Series, Robin Bhatt
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 6 -->
+                <div class="cards_container">
+                    <div class="card_1">
+
+                        <div class="cardheading">
+
+                        </div>
+
+                        <div class="card_1_">
+                            <img src="C:\Users\zain\Desktop\Spotify Clone CSS\photos\cards_image7.jfif" alt="">
+                            <p class="card_title">
+                                Tum hi ho
+                            </p>
+                            <p class="card_1_para">
+                                Arijit Singh, T-Series , Mithoon
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- new highdings new cards -->
+                <!-- card 1 -->
+                <h2 class="card_1_heading">
+                    Featured Charts(Under Maintenance)
+                </h2>
+
+                <div class="cards_container">
+                    <div class="card_1">
+
+                        <div id="first_card" class="card_1_">
+                            <img src="C:\Users\zain\Desktop\Spotify Clone CSS\photos\card_image8.jfif" alt="">
+                            <p class="card_title">
+                                Ram Sampth Remix
+                            </p>
+                            <p class="card_1_para">
+                                Sachin-Jigar , Rashid Ali and Sona Mohapatra
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="cards_container">
+                    <div class="card_1">
+
+                        <div id="first_card" class="card_1_">
+                            <img src="C:\Users\zain\Desktop\Spotify Clone CSS\photos\cards_image5.jpg" alt="">
+                            <p class="card_title">
+                                Ram Sampth Remix
+                            </p>
+                            <p class="card_1_para">
+                                Sachin-Jigar , Rashid Ali and Sona Mohapatra
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="cards_container">
+                    <div class="card_1">
+
+                        <div id="first_card" class="card_1_">
+                            <img src="C:\Users\zain\Desktop\Spotify Clone CSS\photos\card_image9.jfif" alt="">
+                            <p class="card_title">
+                                Ram Sampth Remix
+                            </p>
+                            <p class="card_1_para">
+                                Sachin-Jigar , Rashid Ali and Sona Mohapatra
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div class="cards_container">
+                    <div class="card_1">
+
+                        <div id="first_card" class="card_1_">
+                            <img src="photos/card_image10.jfif" alt="">
+                            <p class="card_title">
+                                Ram Sampth Remix
+                            </p>
+                            <p class="card_1_para">
+                                Sachin-Jigar , Rashid Ali and Sona Mohapatra
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 5 -->
+                <div class="cards_container">
+                    <div class="card_1">
+
+                        <div id="first_card" class="card_1_">
+                            <img src="C:\Users\zain\Desktop\Spotify Clone CSS\photos\card_image11.jpg" alt="">
+                            <p class="card_title">
+                                Ram Sampth Remix
+                            </p>
+                            <p class="card_1_para">
+                                Sachin-Jigar , Rashid Ali and Sona Mohapatra
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- cards ended -->
+            </div>
+
+        </div>
+
+        <div class="foot">
+            <div class="left">
+                <img id="song_img" src="C:\Users\zain\Desktop\Spotify Clone CSS\photos\playlist.jpg" alt="photo">
+                <p id="song_name" class="title">
+                    Sanam Ray
+                </p>
+                <p id="detail"> <a id="song1_anchor_1" href="#">Arijit Singh,</a>
+                    <a id="song1_anchor_2" href="#">T-Series</a>
+                    <a id="song1_anchor_3" href="#">Mithoon</a>
+                </p>
+                <span id="add_icon" class="material-symbols-outlined">
+                    add_circle
+                </span>
+            </div>
+            <div class="center">
+                <div id="parent_play_btn" class="play_Settings">
+                    <span id="shuffle" class="material-symbols-outlined">
+                        shuffle
+                    </span>
+                    <span id="left_btn" class="material-symbols-outlined">
+                        skip_previous
+                    </span>
+                    <svg  id="play_btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z">
+                        </path>
+                    </svg>
+                    <span id="right_btn" class="material-symbols-outlined">
+                        skip_next
+                    </span>
+                </div>
+                <div class="range_sound">
+                    <label id="start_time" for="volume">0.00</label>
+                    <input type="range" id="volume" name="volume" min="0" max="100" step="1" value="0" />
+                    <label id="end_time" for="volume">2.50</label>
+                    <i id="repeat" class="fa-solid fa-repeat"></i>
+                </div>
+            </div>
+            <div id="right_icons" class="right">
+                <i id="slideshow" class="material-symbols-outlined">
+                    slideshow
+                </i>
+                <i id="mic_icon" class="fa-solid fa-microphone-lines"></i>
+
+                <i id="toc_icon" class="material-symbols-outlined">
+                    toc
+                </i>
+
+                <label id="label_volume" for="volume-right">
+                    <i class="fa-solid fa-volume-high"></i>
+                </label>
+                <input id="volume_right" type="range" name="volume-right" min="0" max="100" step="1" value="100">
+
+                <i id="connect_icon" class="material-symbols-outlined">
+                    cast_connected
+                </i>
+
+                <i id="full_screen" class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <!-- including script file in html -->
+    <script src="script.js"></script>
+</body>
+
+</html>

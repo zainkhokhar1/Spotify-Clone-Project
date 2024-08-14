@@ -1,0 +1,688 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Poppins", system-ui;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.container {
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    column-gap: 5px;
+    overflow: hidden;
+}
+
+/* Sidebar styling */
+.sidebar {
+    grid-column: 1/4;
+    grid-row: 1/12;
+    background-color: cyan;
+    background-color: rgb(0, 0, 0);
+    border-radius: 14px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.foot {
+    background-color: rgba(0, 0, 0, 0.2);
+    grid-column: 1/13;
+    display: flex;
+    width: 100%;
+    height: 73px;
+    justify-content: space-around;
+}
+
+.home_icon {
+    width: 380px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 7px;
+    margin-left: 8px;
+    height: 130px;
+    margin-right: 0;
+    padding: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+#Home {
+    position: absolute;
+    top: 12px;
+    left: 80px;
+    display: inline;
+    margin-left: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#icon {
+    position: absolute;
+    top: 30px;
+    left: 35px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.search_icon {
+    height: 10px;
+}
+
+#search {
+    display: inline;
+    position: absolute;
+    top: 70px;
+    left: 82px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+#s_icon {
+    position: absolute;
+    left: 35px;
+    top: 87px;
+    font-size: 28px;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+.container_card {
+    width: 380px;
+    height: 80%;
+    margin-left: 8px;
+    margin-right: 5px;
+    padding-top: 0px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+#library {
+    display: inline;
+    position: absolute;
+    left: 65px;
+    top: 135px;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+#icon_book {
+    font-size: 30px;
+    position: absolute;
+    left: 25px;
+    top: 155px;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+#add {
+    font-size: 23px;
+    position: relative;
+    left: 290px;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+#arrow {
+    font-size: 24px;
+    position: relative;
+    left: 309px;
+    top: 2px;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+.container_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cards {
+    height: 155px;
+    width: 300px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+#card_1 {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.headings {
+    position: relative;
+}
+
+#card_heading {
+    font-weight: 500;
+    font-size: 15px;
+    right: 30px;
+    top: 13px;
+    cursor: pointer;
+}
+
+#card_heading_2 {
+    position: relative;
+    font-size: 15px;
+    top: 9px;
+    right: 10px;
+}
+
+#card_text {
+    position: relative;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    right: 40px;
+    top: 5px;
+}
+
+#card_text_2 {
+    position: relative;
+    color: white;
+    font-size: 13px;
+    font-weight: 300;
+    right: 8px;
+    left: 6px;
+    top: 5px;
+}
+
+#card_2 {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.create_playlist {
+    font-size: 15px;
+    height: 30px;
+    background-color: whitesmoke;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+#btn_1 {
+    font-weight: 700;
+    position: relative;
+    right: 65px;
+    top: 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#btn_2 {
+    font-weight: 700;
+    font-size: 14px;
+    position: relative;
+    right: 55px;
+    top: 15px;
+    cursor: pointer;
+}
+
+/* bottom styling */
+
+#play_btn {
+    height: 38px;
+    position: relative;
+    top: 8px;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+#left_btn {
+    font-size: 30px;
+    position: relative;
+    right: 4px;
+    top: 9px;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+#right_btn {
+    font-size: 30px;
+    position: relative;
+    left: 4px;
+    top: 9px;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+#volume {
+    position: relative;
+    top: 7px;
+    right: 30px;
+    width: 430px;
+    height: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: rgb(165, 165, 165);
+}
+
+.play_Settings {
+    margin-left: 109px;
+    height: 30px;
+}
+
+.range_sound {
+    position: relative;
+    right: 50px;
+}
+
+#start_time {
+    font-size: 12px;
+    position: relative;
+    right: 27px;
+    top: 10px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+#end_time {
+    position: relative;
+    top: 10px;
+    right: 30px;
+    font-size: 12px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+#shuffle {
+    position: relative;
+    right: 20px;
+    top: 5px;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+#repeat {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.6);
+    position: relative;
+    right: 172px;
+    bottom: 10px;
+    cursor: pointer;
+}
+.left
+{
+    padding-left: 24px;
+}
+
+.left img {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    right: 95px;
+    top: 1px;
+    border-radius: 3px;
+    margin-left: 38px;
+}
+
+.left .title {
+    position: relative;
+    top: -72px;
+    left: 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#detail {
+    position: relative;
+    top: -84px;
+    display: inline;
+    left: 25px;
+    cursor: pointer;
+}
+
+#detail a {
+    font-family: "Poppins", system-ui;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+}
+
+#add_icon {
+    position: relative;
+    top: -100px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    left: 30px;
+    cursor: pointer;
+}
+
+#right_icons {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#slideshow {
+    font-size: 20px;
+    position: relative;
+    right: 45px;
+    cursor: pointer;
+}
+
+#mic_icon {
+    position: relative;
+    right: 32px;
+    cursor: pointer;
+}
+
+#toc_icon {
+    position: relative;
+    right: 21px;
+    cursor: pointer;
+}
+
+#label_volume {
+    position: relative;
+    right: 15px;
+    cursor: pointer;
+}
+.toggle_color 
+{
+    color: red;
+}
+
+#volume_right {
+    height: 5px;
+    position: relative;
+    right: 10px;
+    cursor: pointer;
+}
+
+#connect_icon {
+    position: relative;
+    left: 10px;
+    cursor: pointer;
+}
+
+#full_screen {
+    position: relative;
+    left: 35px;
+    cursor: pointer;
+}
+
+.main {
+    grid-column: 4/13;
+    grid-row: 1/12;
+    border-radius: 14px;
+    overflow: auto;
+    margin-bottom: 10px;
+    margin-left: 55px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 10px;
+    margin-right: 8px;
+    scrollbar-color: grey transparent;
+    /* Thumb color and transparent track */
+    scrollbar-width: thin;
+    /* Thin scrollbar width */
+    padding: 1px 0 8px 1px;
+}
+
+/* Custom scrollbar for the .main div in Firefox */
+.navbar_container {
+    height: 110px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+.first_row {
+    height: 80px;
+    /* background-color: black; */
+}
+
+#left_btn_2 {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 17px;
+    height: 32px;
+    width: 32px;
+    border: 0;
+    border-radius: 50%;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    font-weight: 600;
+    margin-right: 5px;
+    cursor: not-allowed;
+}
+
+#right_btn_2 {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 17px;
+    height: 32px;
+    width: 32px;
+    border: 0;
+    border-radius: 50%;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    font-weight: 600;
+    cursor: not-allowed;
+}
+
+#btn_1_ {
+    border: 0px;
+    background-color: white;
+    position: relative;
+    top: 7px;
+    left: 500px;
+    border-radius: 18px;
+    font-size: 14px;
+    padding: 9px 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#btn_2_ {
+    border: 0;
+    position: relative;
+    left: 505px;
+    top: 7px;
+    border-radius: 18px;
+    font-size: 14px;
+    padding: 9px 16px;
+    background-color: black;
+    color: white;
+    word-spacing: 1;
+    padding: 9px 13px;
+    cursor: pointer;
+}
+
+#bell_btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.6);
+    position: relative;
+    top: 7px;
+    padding-top: 5px;
+    left: 515px;
+    height: 29px;
+    width: 35px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#user_btn {
+    position: relative;
+    top: 7px;
+    padding-top: 5px;
+    left: 525px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 19px;
+    cursor: pointer;
+}
+
+#all_btn {
+    height: 30px;
+    width: 39px;
+    border-radius: 30px;
+    border: 0px;
+    position: relative;
+    bottom: 7px;
+    left: 10px;
+    cursor: pointer;
+}
+
+#music_btn {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 32px;
+    width: 70px;
+    border-radius: 30px;
+    border: 0px;
+    position: relative;
+    bottom: 7px;
+    left: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cards_main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 34px 0 0 12px;
+    column-gap: 20px;
+}
+
+.card_1_heading {
+    width: 100%;
+}
+
+.cards_container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+/* #card_1_heading {
+    color: white;
+    margin-left: 15px;
+    font-size: 22px;
+    margin-bottom: 5px;
+} */
+.card_1_heading {
+    cursor: pointer;
+}
+
+.card_1_ {
+    background-color: transparent;
+    width: 160px;
+    height: 220px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+div img {
+    height: 60%;
+    width: 91%;
+    padding: 3px 5px 3px 8px;
+    border-radius: 10px;
+}
+
+.card_title {
+    position: relative;
+    bottom: 4px;
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+    margin: 0 0 0 9px;
+}
+
+.card_1_para {
+    position: relative;
+    bottom: 2px;
+    font-size: 12px;
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 6px;
+}
+
+/* checking hover on card 1 */
+.card_1:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 13px;
+}
+
+#s_icon:hover,
+#search:hover,
+#icon_book:hover,
+#library:hover,
+#add_icon:hover,
+#add:hover,
+#arrow:hover,
+#bell_btn:hover,
+#shuffle:hover,
+#left_btn:hover,
+#right_btn:hover,
+#repeat:hover,
+#slideshow:hover,
+#mic_icon:hover,
+#toc_icon:hover,
+#label_volume:hover,
+#connect_icon:hover,
+#full_screen:hover,
+#user_btn:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Buttons hover Effects Appling now */
+
+#btn_1:hover,
+#btn_2:hover,
+#btn_1_:hover {
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+#btn_2_:hover
+{
+    font-size: 15px;
+}
+#bell_btn:hover
+{
+    font-size: 21px;
+}
+#user_btn:hover
+{
+    font-size: 20px;
+}
+
+#song1_anchor_1:hover,
+#song1_anchor_2:hover,
+#song1_anchor_3:hover,
+.title:hover {
+    text-decoration: underline;
+}
+
+
+/* pause button styling */
+#pause_btn 
+{
+    display: inline-block;
+    margin-top: 0px;
+    height: 40px;
+    left: 44.6%;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 33px;
+    cursor: pointer;
+}
